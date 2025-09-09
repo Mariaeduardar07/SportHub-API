@@ -2,7 +2,7 @@ import express from "express";
 import { config } from "dotenv";
 import cors from "cors"; // Importa o middleware CORS
 
-// import routes from "./routes/index.routes.js";
+import routes from "./routes/index.routes.js";
 
 config(); // Carrega variáveis de ambiente do arquivo .env
 const port = process.env.PORT || 5000;
@@ -19,7 +19,7 @@ app.get("/", (req, res) => {
 });
 
 // Usar as rotas definidas
-// app.use("/", routes);
+app.use("/", routes);
 
 // Iniciar o servidor
 app.listen(port, () => {
