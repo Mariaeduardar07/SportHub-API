@@ -6,7 +6,7 @@ import modalityRouter from "./modalityRoutes.js";
 const router = express.Router();
 
 // Rotas públicas
-router.use("/modalidade", modalityRouter);
+router.use("/modalidades", modalityRouter);
 
 
 export default router;
